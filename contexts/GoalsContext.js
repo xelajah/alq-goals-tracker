@@ -2,7 +2,7 @@ import { createContext, useState } from "react"
 
 export const GoalsContext = createContext()
 
-export function GoalsProvider({ children }) {
+export function GoalsProvider({ children }) { 
   const [goals, setGoals] = useState([])
 
   async function fetchGoals() {
